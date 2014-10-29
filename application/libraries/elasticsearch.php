@@ -136,7 +136,7 @@ class ElasticSearch
 
     public function add($type, $id, $data)
     {
-        return $this -> call($type . '/' . $id, 'PUT', $data);
+        return $this -> call($type . '/' . $id, 'POST', $data);
     }
 
     /**
